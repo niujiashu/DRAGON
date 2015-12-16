@@ -1,0 +1,734 @@
+"
+""**.****|****.****|****.****|****.****|****.****|****.****|****.****|****.****|
+"" * notes.dat *                                   galprop package * 3/25/2002 
+""**"****!****"****!****"****!****"****!****"****!****"****!****"****!****"****|
+"
+###### Notes on cross section evaluation: eval_iso_cs.dat ###### imos
+
+Iron solar abundances:      54 - 0.056,  56 - 0.918,  57 - 0.022,  58 - 0.003
+Silicon solar abundances:   28 - 0.919,  29 - 0.048,  30 - 0.033
+Magnesium solar abundances: 24 - 0.776,  25 - 0.104,  26 - 0.119 
+Oxigen solar abundances:    16 - 0.9973, 17 - 0.0004, 18 - 0.0023
+Nitrogen solar abundances:  14 - 0.996,  15 - 0.004
+Carbon solar abundances:    12 - 0.988,  13 - 0.012
+Boron solar abundances:     10 - 0.182,  11 - 0.818
+
+NB "/" means checked once again
+
+""**"****!****"****!****"****!****"****!****"****!****"****!****"****!****"****|
+
+REACTION CROSS SECTIONS
+
+### 26Fe ### Fe-56 ### ### /
+run_cs 26.Fe/Fe56.2k 26.Fe/yield.FE56 26.Fe/fe
+
+Fe56 (p,X) Fe55 ** 26 56 26 55 0 0 ** / ?
+SEM2k calcs pass through several available pts.
+~59mb @ 600MeV/n. Use SEM2k.
+
+Fe56 (p,X) Fe53 ** 26 56 26 54 0 0 ** / ???
+Just 3 pts @ ~550MeV/n, ~13mb. ST is consistent w. SEM2k.
+Take ST-ren.: p_cs_fits.dat
+
+Fe56 (p,X) Fe53 ** 26 56 26 53 0 0 ** / ???
+Very uncertain. Few pts scattered frm 0.45mb to 31 mb.
+SEM2k indicate ~4mb @ 600 MeV - close to W pts
+~ 3mb. ST is close to SEM2k. Take ST-ren.: p_cs_fits.dat
+
+Fe56 (p,X) Fe52 ** 26 56 26 52 0 0 ** / ?
+CS ~0.6-1mb. See Mn52.
+
+\\Fe56 (p,X) Mn-tot
+Total Mn production ~131mb is in approx. agreement with
+We98prc data: 148.9 mb +/- 10% @ 573 MeV/nucleon.
+Mn51: ~3mb, Mn52: ~14mb, Mn53: ~38mb, Mn54: ~40mb, Mn55: ~36mb
+
+Fe56 (p,X) Mn55 ** 26 56 25 55 0 0 ** / ???
+There are 3 W-pts. Use SEM2k renorm. (agree w. W).
+
+Fe56 (p,X) Mn54 ** 26 56 25 54 0 0 ** /
+A lot of data on natFe (almost pure Fe56 for this reaction).
+Use data & SEM2k which very well approx. the data.
+
+Fe56 (p,X) Mn53 ** 26 56 25 53 0 0 ** / ???
+There are 2 W-pts. ST agree w. SEM2k and W (>200MeV).
+Took SEM2k with ~ST tail.
+
+Fe56 (p,X) Mn52 ** 26 56 25 52 26 52 0 0 ** /
+A lot of data on natFe. Use data on cumulative yield.
+
+Fe56 (p,X) Cr52 ** 26 56 24 52 0 0 ** / ???
+3 pts 38-44mb @ 600 MeV/n.
+
+Fe56 (p,X) Cr51 ** 26 56 24 51 25 51 0 0 ** /
+A lot of data on natFe. Use data on cumulative yield.
+
+Fe56 (p,X) Cr49 ** 26 56 24 49 0 0 ** / ?
+There are some data. SEM2k generally agree.
+Used SEM2k & data. ~5mb @ 600MeV/n.
+
+Fe56 (p,X) Cr48 ** 26 56 24 48 0 0 **
+A lot of data on natFe, but the cs <~1mb @ 600 MeV/n.
+Included in V48 -cumulative.
+
+Fe56 (p,X) V48 ** 26 56 23 49 0 0 **
+Just 5 data pts. All agree, ~34mb @ 600 MeV/n.
+Use W-ren.
+
+Fe56 (p,X) V48 ** 26 56 23 48 0 0 **
+A lot of data on natFe. Use data. ~22.7mb @ 600MeV/n.
+
+Fe56 (p,X) Ti46 ** 26 56 22 46 0 0 ** /
+Only 2 W. data points. ~20mb @ 600 MeV/n.
+Use SEM2k. 
+
+Fe56 (p,X) Ti44 ** 26 56 22 44 0 0 ** /
+Use data on natFe. ~1mb @ 600MeV/n
+
+Fe56 (p,X) Sc48 ** 26 56 21 48 0 0 **
+There are some data on natFe, ~<1mb @ 600MeV/n.
+Use ST non-ren.: p_cs_fits.dat
+
+Fe56 (p,X) Sc47 ** 26 56 21 47 0 0 **
+A lot of data on natFe. Use data. ~3mb @ 600 MeV/n.
+
+Fe56 (p,X) Sc46 ** 26 56 21 46 0 0 **
+A lot of data on natFe. Use data.
+~10 mb @ 600 MeV/n
+
+Fe56 (p,X) Sc44 ** 26 56 21 44 0 0 **
+Fe56 (p,X) Sc43 ** 26 56 21 43 0 0 **
+Fe56 (p,X) Ca47 ** 26 56 20 47 0 0 **
+Fe56 (p,X) Ca45 ** 26 56 20 45 0 0 **
+
+Fe56 (p,X) Ca41 ** 26 56 20 41 0 0 ** / ?
+Use data on natFe, agree w. SEM2k,
+plus ST tail. ~7-9mb @ 600MeV/n
+
+Fe56 (p,X) K43 ** 26 56 19 43 0 0 **
+
+Fe56 (p,X) K42 ** 26 56 19 42 0 0 **
+
+Fe56 (p,X) Ar39 ** 26 56 18 39 0 0 ** / ??
+W is quite good giving only 5 pts. Agree also
+with ST. Take W-ren.: p_cs_fits.dat
+
+Fe56 (p,X) Ar38 ** 26 56 18 38 0 0 **
+
+Fe56 (p,X) Ar37 ** 26 56 18 37 0 0 ** / ??
+Few pts. W & ST ~agree w. data, ST is better.
+Left W or ST.
+
+Fe56 (p,X) Ar36 ** 26 56 18 36 0 0 **
+Fe56 (p,X) Cl39 ** 26 56 17 39 0 0 **
+Fe56 (p,X) Cl38 ** 26 56 17 38 0 0 **
+
+Fe56 (p,X) Cl37 ** 26 56 17 37 0 0 ** / ???
+Very uncertain, 2pts. Use SEM2k renorm. 
+
+Fe56 (p,X) Cl36 ** 26 56 17 36 0 0 ** /
+Quite a lot of data on natFe.
+Use SEM2k renorm. to the data.
+
+Fe56 (p,X) S35 ** 26 56 17 35 0 0 ** / ???
+Just 2 W-pts. Very uncertain.
+
+Fe56 (p,X) Cl34 ** 26 56 17 34 0 0 **
+
+Fe56 (p,X) S35 ** 26 56 16 35 0 0 ** / ???
+Just few scattered pts. Very uncertain.
+Important cs for Cl35 production. 
+
+Fe56 (p,X) P32 ** 26 56 15 32 0 0 **
+Fe56 (p,X) Si31 ** 26 56 14 31 0 0 **
+
+Fe56 (p,X) Al26 ** 26 56 13 26 0 0 ** /
+Many pts on natFe. ST is close to the data.
+Use data.
+
+Fe56 (p,X) Na22 ** 26 56 11 22 0 0 **
+Fe56 (p,X) Ne22 ** 26 56 10 22 0 0 **
+Fe56 (p,X) Ne21 ** 26 56 10 21 0 0 **
+Fe56 (p,X) Be10 ** 26 56 4 10 0 0 **
+Fe56 (p,X) Be7 ** 26 56 4 7 0 0 **
+
+### 26Fe ### Fe-54 ### ### /
+run_cs 26.Fe/Fe54.2k 26.Fe/yield.FE54 26.Fe/fe
+
+Fe54 (p,X) Mn53 ** 26 54 25 53 0 0 ** / ???
+Two W. pts. ~41mb @ 550 MeV/n.
+All approxs pass through. 
+Take SEM2k with ST-tail.
+
+### 25Mn ### Mn-55 ### ### /
+
+Mn55 (p,X) Mn54 ** 25 55 25 54 0 0 ** / ???
+Two W. pts. ~44.5 @ 550 MeV/n.
+SEM2k & ST are similar.
+Take ST-ren.: p_cs_fits.dat
+
+### 17Cl ### Cl-37 ### ### /
+run_cs 17.Cl/Cl37.2k 17.Cl/yield.CL37 17.Cl/cl
+
+Cl37 (p,X) Cl36 ** 17 37 17 36 0 0 ** / ??
+Only 2 W data pts. ST and SEM2k are similar @ LE,
+ST and W are similar @ HE. ~36.6mb @ 600MeV/n
+Take ST-ren.: p_cs_fits.dat
+
+Cl37 (p,X) Cl35 ** 17 37 17 35 0 0 ** / ??
+Only 2 W data pts. ST and SEM2k are similar @ LE,
+ST and W are similar @ HE. ~8mb @ 600MeV/n
+Take ST-ren.: p_cs_fits.dat
+
+Cl37 (p,X) S35 ** 17 37 16 35 0 0 ** / ???
+Only 1 W pt. ~32.2 mb @ 600MeV/n. 
+All approx are different. 
+Take W-ren.: p_cs_fits.dat
+
+### 14Si ### Si-28 ### ### /
+run_cs 14.Si/Si28.2k 14.Si/yield.SI28 14.Si/si
+
+Si28 (p,X) Si27 ** 14 28 14 27 0 0 ** / ??
+Webber's 3 pts, ~31mb. 2 older pts are 13 mb @ 200 MeV/n.
+Uncertain. Left as W ren. 
+
+\\Si28 (p,X) Al-tot
+Total Al production is in approx. agreement with
+We98prc data: 80.4 mb +/- 15% @ 506 MeV/nucleon.
+W-Al25: ~3mb.
+
+Si28 (p,X) Al27 ** 14 28 13 27 0 0 ** / ??
+Quite uncertain, only few points. Webber & ST agree
+at above ~600 MeV, ~50mb. Below ST and Alice show a dip in agreement
+with older point. Use Alice @ LE and data above ~200MeV/n.
+
+Si28 (p,X) Al26 ** 14 28 13 26 14 26 0 0 ** /
+There are a lot of data on natSi. Use data.
+~24mb @ 600 MeV/n.
+
+Si28 (p,X) Al25 ** 14 28 13 25 0 0 ** / ?
+Just 4 points. SEM2k & Alice show a flat cs above 100 MeV
+and consistent w. ST & W. Use W, ~3.5mb: p_cs_fits.dat
+
+\\Si28 (p,X) Na-tot
+Total Na production is in approx. agreement with
+We98prc data: 44.4 mb +/- 10% @ 506 MeV/nucleon.
+W-Na24: ~6.5mb.
+
+Si28 (p,X) Na23 ** 14 28 11 23 0 0 ** / ???
+Uncertain. Only 4 pts available: 
+218 MeV/n -9+/-2mb, 600 ~17.5+/-2mb, 10000 -46+/-9mb.
+
+Si28 (p,X) Na22 ** 14 28 11 22 0 0 **
+A lot of data on natSi, ~19mb @ 600 MeV/n. Use data.
+
+Si28 (p,X) Na21 ** 14 28 11 21 0 0 ** / ??
+See Ne21. Only 4 pts, ~2mb.
+
+\\Si28 (p,X) Ne-tot
+Total Ne production is in approx. agreement with
+We98prc data: 46.0 mb +/- 10% @ 506 MeV/nucleon.
+W-Ne19: ~3mb, Ne20: ~13.3mb, Ne21: ~19mb, Ne22: ~8mb, Ne23: ~2mb
+
+Si28 (p,X) Ne22 ** 14 28 10 22 0 0 **
+Quite a lot of data incl. cumulative (+Na22) data.
+Use data; a sum Ne22+Na22 is consistent with cumulative 
+yield.
+
+Si28 (p,X) Ne21 ** 14 28 10 21 11 21 0 0 ** /
+There are many pts on natSi. Agree with W pt +Na21 (~2mb).
+Added 2 pts to remorm. W. Use W (ren.): p_cs_fits.dat
+
+Mg24 (p,X) C13 ** 12 24 6 13 0 0 ** / ???
+No data. ST, W and SEM2k all are in approx agreement.
+Use ST (non-ren. ~7mb): p_cs_fits.dat
+
+\\Si28 (p,X) B-tot
+Total B production is in approx. agreement with
+We98prc data: 8.5 mb +/- 20% @ 506 MeV/nucleon.
+W-B10: ~2mb, W-B11: ~3mb.
+
+Si28 (p,X) Be10 ** 14 28 4 10 0 0 ** /
+A lot of data on natSi. ST close. Use data.
+
+Si28 (p,X) Be9 ** 14 28 4 9 0 0 ** / ?
+W & ST quite close. 2 pts agree.
+Use W (ren.): p_cs_fits.dat
+
+Si28 (p,X) Be7 ** 14 28 4 7 0 0 ** /
+A lot of data on natSi. ST quite agree. Use data.
+
+### 13Al ### Al-27 ### ###
+run_cs 13.Al/Al27.2k 13.Al/yield.AL27 13.Al/al
+
+Al27 (p,X) Al26 ** 13 27 13 26 0 0 ** /
+A lot of data. ~23 mb @ 600 MeV/n,
+W pts are 10mb higher. Use the data.
+
+### 12Mg ### Mg-24 ### ###
+run_cs 12.Mg/Mg24.2k 12.Mg/yield.MG24 12.Mg/mg
+
+\\Mg24 (p,X) Na-tot
+Total Na production is in agreement with
+We98prc data: 81.5 mb +/- 10% @ 509 MeV/nucleon.
+
+Mg24 (p,X) Na23 ** 12 24 11 23 0 0 ** / ??
+Not much data - 3 pts. ST & W approx. agree.
+Use W, ~44mb: p_cs_fits.dat
+
+Mg24 (p,X) Na22 ** 12 24 11 22 0 0 ** /
+A lot of data on natMg. Agree w. W-data & approx.
+Use data, ~33mb.
+
+Mg24 (p,X) Na21 ** 12 24 11 21 0 0 ** / ??
+Only 2 pts. Alice, SEM2k, ST approx. agree, but
+give ~2mb larger cs. Use W (ren.), 4mb: p_cs_fits.dat
+
+\\Mg24 (p,X) Ne-tot
+Total Ne production is in DISagreement with
+We98prc data: 64.5 mb +/- 10% @ 509 MeV/nucleon.
+Mainly because of Ne20 cs. Ne19 ~3mb.
+
+Mg24 (p,X) Ne22 ** 12 24 10 22 0 0 ** / ???
+Webber's 3 points are 3 times lower than others on natMg.
+Made between, ~33mb. Use W (ren.): p_cs_fits.dat
+
+Mg24 (p,X) Ne21 ** 12 24 10 21 0 0 ** /
+There are 13 points (11 on natMg - higher, probably include
+Na21+F21), the cs is quite flat ~26mb.
+Use W (renor.): p_cs_fits.dat
+
+Mg24 (p,X) Ne20 ** 12 24 10 20 0 0 ** / ?
+There are several points. 
+W-data (~23mb) plus F20 (~3mb) are consistent with
+data on natMg. Use W (renor.): p_cs_fits.dat
+
+\\Mg24 (p,X) F-tot
+Total F production is in agreement with
+We98prc data: 29.7 mb +/- 10% @ 509 MeV/nucleon
+F17 ~2.4mb, F18 ~12.5mb, F19 ~13mb, F20 ~2.6mb, F21 ~0.4mb
+
+Mg24 (p,X) F18 ** 12 24 9 18 0 0 ** /
+Just two points ~12.5 mb @ 600 MeV/n are available.
+W or ST renormalized are close.
+
+Mg24 (p,X) N13 ** 12 24 7 13 0 0 ** / ???
+Just one W-point ~6 mb @ 600 MeV/n, looks too high.
+ST, W and SEM2k all are in approx agreement, lower.
+Use ST (non-ren. ~2mb): p_cs_fits.dat
+
+\\Mg24 (p,X) B-tot
+Total B production is in agreement with
+We98prc data: 13.2 mb +/- 15% @ 509 MeV/nucleon
+
+Mg24 (p,X) B11 ** 12 24 5 11 0 0 ** / ???
+There is no data. 
+Use ST (non-ren.), ~8mb @ 500MeV/n: p_cs_fits.dat
+
+Mg24 (p,X) B10 ** 12 24 5 10 0 0 ** / ???
+There is no data. 
+Use ST (non-ren.), ~5mb @ 500MeV/n: p_cs_fits.dat
+
+Mg24 (p,X) Be10 ** 12 24 4 10 0 0 ** /
+There is no data on Mg24; what available is data on natMg.
+The natMg is only ~80% of Mg24. The data on natMg are strangely
+duplicated: measurements done at 600 MeV/n - 3 pts;
+at 800, 1200, and 2600 MeV/n - 2pts for each energy.
+The error bars are small and the two measurements always
+differ by 2 sigma. Most probably these are corrected data
+or data on natMg and Mg24. 
+Use ST (put 2 points to renor.): p_cs_fits.dat
+
+Mg24 (p,X) Be9 ** 12 24 4 9 0 0 ** / ???
+There is no data. W & ST are close.
+Use ST (non-ren.): p_cs_fits.dat
+
+Mg24 (p,X) Be7 ** 12 24 4 7 0 0 ** /
+There is no data on Mg24; what available is data on natMg.
+Webber & ST approx. are quite close. Used the data.
+
+Mg24 (p,X) Li7 ** 12 24 3 7 0 0 ** / ???
+There is no data. 
+Use ST (non-ren.), ~11mb: p_cs_fits.dat
+
+Mg24 (p,X) Li6 ** 12 24 3 6 0 0 ** / ???
+There is no data. 
+Use ST (non-ren.), ~11mb: p_cs_fits.dat
+
+### 10Ne ### Ne-20 ### ###
+run_cs 10.Ne/Ne20.2k 10.Ne/yield.NE20 10.Ne/ne
+
+\\Ne20 (p,X) F-tot
+Total F production (17+18+19) is in agreement with
+We98 data: 48.3 mb +/- 10% @ 411 MeV/nucleon
+
+### 8O ### O-16 ### ### 
+run_cs 08.O/O16.2k 08.O/yield.O16 08.O/o
+
+** O16 (p,X) O15 ** 8 16 8 15 0 0 ** /
+There are a lot of data on the reaction (on natO).
+Since N15 is stable, the data indeed represent
+O15 in the final state. 
+
+** O16 (p,X) N15 ** 8 16 7 15 0 0 ** /
+The data (4 points) are mostly from Webber's group.
+
+** O16 (p,X) N14 ** 8 16 7 14 0 0 ** /
+Only three Webber's points available. Keep Webber's appx.
+
+** O16 (p,X) N13 (+0.88 O13) ** 8 16 7 13 0 0 ** / m.b. 20% too much (~1mb).
+Surprisingly there is a lot of data on this reaction (on natO).
+The data probably contain also O13 production, but the
+cross section must be very small (~0.17mb @ 2100 MeV/n).
+
+** O16 (p,X) C14 ** 8 16 6 14 0 0 ** / channel important for C13.
+Only 4 data points exist. Three points in the range 400-600 MeV/n
+from Webber's group show identical value while 4th point at 2100
+MeV/n is as twice as higher. Took as calculated @ LE.
+
+** O16 (p,X) C13 ** 8 16 6 13 0 0 ** /
+Only 3 points at ~400, 600, 2100 MeV/n.
+Took as calculated @ LE.
+B13 production cs is very small (~0.3 mb).
+
+** O16 (p,X) C12 ** 8 16 6 12 0 0 ** /
+Alice and CEM2k agree well and match the data (3 points).
+Took Alice @ LE and used data @ HE.
+
+** O16 (p,X) C11 ** 8 16 6 11 0 0 ** /
+See B11.
+
+** O16 (p,X) C10 ** 8 16 6 10 0 0 ** / see B10
+There are only 7 data points. Half of them indicate cs ~1 mb,
+including Webber's data. Decided to include into B10 cs. 
+
+\\O16 (p,X) B-tot
+Total B production is in agreement with
+We98 data: 24.5 mb +/- 10% @ 387 MeV/nucleon
+
+** O16 (p,X) B11 ** 8 16 5 11 6 11 4 11 0 0 ** /
+5 older points include C11 + 0.97 Be11, Webber's group
+gives 2 points of the partial cross section. There are
+many data for A11 = B11+C11+Be11.
+Pure B11 cs = ~15 mb. Use fit: p_cs_fits.dat
+
+** O16 (p,X) B10 (+O10) ** 8 16 5 10 0 0 ** /
+There are ~10 data points, 2 of them are Webber's.
+Older points probably include C10 contribution so
+I decided to use a combined cross section.
+Pure B11 cs = ~10 mb.
+
+\\O16 (p,X) Be-tot
+Total Be production is in agreement with
+We98 data: 10.5 mb +/- 20% @ 387 MeV/nucleon
+
+** O16 (p,X) Be10 ** 8 16 4 10 0 0 ** /
+A lot of data on natO. Using the data. ~1mb @ 300-400 MeV/n.
+Contribution of Li10 is ~0.1mb @ 3000 MeV/n (~3%).
+It is probably included into the data.
+
+** O16 (p,X) Be9 ** 8 16 4 9 0 0 ** / some uncertainty
+Used O16->A9 data @ LE, @ HE
+data + renormalized calcul. of SEM2k. ~2-3mb @ 300-400 MeV/n.
+
+** O16 (p,X) Be7 ** 8 16 4 7 0 0 ** /
+A lot of data on O16 and natO (scattered). Just used the data
+to make an approximation. ~10mb @ 300-400 MeV/n.
+
+** O16 (p,X) Li7 ** 8 16 3 7 0 0 ** /
+Not much data, just 6 points. Used the data.
+
+** O16 (p,X) Li6 (+He6) ** 8 16 3 6 2 6 0 0 ** /
+Just used the data, 8 pts.
+
+### 7N ### N-15 ### ### 
+run_cs 07.N/N15.2k 07.N/yield.N15 07.N/n
+
+N15 (p,X) N14 ** 7 15 7 14 0 0 ** /
+Only two Webber's points available. ST approx. is more
+like SEM2k. Keep ST: p_cs_fits.dat
+
+N15 (p,X) N13 ** 7 15 7 13 0 0 ** / so-so
+There are only 2 data points above ~50 MeV/n (Webber's).
+Use W: p_cs_fits.dat
+
+N15 (p,X) C13 ** 7 15 6 13 0 0 ** /
+Just one Webber's point. SEM2k & W are close, ST is lower.
+Use W: p_cs_fits.dat
+
+N15 (p,X) C11 ** 7 15 6 11 0 0 ** /
+There is only 1 data point above ~50 MeV/n (Webber's).
+Use W: p_cs_fits.dat
+
+\\N15 (p,X) B-tot
+Total B production is made to be in agreement with
+We98 data: 33.6 mb +/- 10% @ 371 MeV/nucleon
+
+N15 (p,X) B11 ** 7 15 5 11 0 0 ** / so-so
+There are 2 data points. Approximations quite disagree.
+Took the lower point, ~27mb, more seriously as
+it better agrees with totB. Use W: p_cs_fits.dat
+
+N15 (p,X) B10 ** 7 15 5 10 0 0 ** / so-so
+There are 2 data points. All approx. are generally
+agree. Took the lower point, ~10mb, more seriously as
+it better agrees with totB. Took Alice @ LE and SEM2k @ HE.
+
+\\N15 (p,X) Be-tot
+Total Be production is in agreement with
+We98 data: 15.4 mb +/- 10% @ 371 MeV/nucleon
+
+N15 (p,X) Be10 ** 7 15 4 10 0 0 ** / ??
+No data. Put artificial point to reduce ST to
+approx. agree w. Alice & SEM2k. ~1.5mb @ 400MeV/n 
+Use ST: p_cs_fits.dat
+
+N15 (p,X) Be9 ** 7 15 4 9 0 0 ** / ??
+There is only 1 data point, 7.5mb.
+Use ST: p_cs_fits.dat
+
+N15 (p,X) Be7 ** 7 15 4 7 0 0 ** / ??
+There are 2 data points, 5.5mb.
+Use const: p_cs_fits.dat
+
+N15 (p,X) Li7 ** 7 15 3 7 0 0 ** / ??
+There is only 1 data point (W).
+Use const: p_cs_fits.dat
+
+N15 (p,X) Li6 ** 7 15 3 6 0 0 ** / ??
+There is only 1 data point (W). ST gives smth average
+between Alice & SEM2k. Use ST: p_cs_fits.dat
+
+### 7N ### N-14 ### ### 
+run_cs 07.N/N14.2k 07.N/yield.N14 07.N/n
+
+N14 (p,X) N13 ** 7 14 7 13 0 0 ** /
+There is a lot of data on natN. The data are a little bit
+scattered at ~1000 MeV/n. Still use the data.
+
+N14 (p,X) C13 ** 7 14 6 13 0 0 ** / ??
+Just 3 Webber's points available. Alice shows a resonance @ LE.
+Use W: p_cs_fits.dat
+
+N14 (p,X) C11 ** 7 14 6 11 0 0 ** /
+See B11.
+
+\\N14 (p,X) B-tot
+Total B production is in agreement with
+We98 data: 27.9 mb +/- 10% @ 376 MeV/nucleon
+
+N14 (p,X) B11 ** 7 14 5 11 6 11 4 11 0 0 ** /
+Only 2 data points by Webber, ~17.5mb. A lot of data for A11. 
+Use fit: p_cs_fits.dat
+
+N14 (p,X) B10 ** 7 14 5 10 0 0 ** /
+Only 2 data points by W and A10 data, ~10mb. 
+My fit well agree w. Alice & SEM2k & W. 
+Use fit: p_cs_fits.dat
+
+\\N14 (p,X) Be-tot
+Total Be production is in agreement with
+We98 data: 14.4 mb +/- 20% @ 376 MeV/nucleon
+
+N14 (p,X) Be11 ** 7 14 4 11 0 0 ** /
+See B11.
+
+N14 (p,X) Be10 ** 7 14 4 10 0 0 ** /
+A lot of data on natN, ~1.5mb @ 400MeV/n. Use the data.
+
+N14 (p,X) Be9 ** 7 14 4 9 0 0 ** / ? m.b. ST is better ?
+There are 2 points for Be9 and some data
+for A9, ~2mb @ 400MeV/n. Use fit: p_cs_fits.dat
+
+N14 (p,X) Be7 ** 7 14 4 7 0 0 ** / 
+A lot of data on N14 and natN, ~10mb. Use the data.
+M.b. approx. another way to make less Be7 ?
+
+N14 (p,X) Li7 ** 7 14 3 7 0 0 ** / ??
+Only 1 data point. ST agree and shows ~const.
+Used Alice @ LE + const.
+
+N14 (p,X) Li6 ** 7 14 3 6 0 0 ** / ??
+Only 1 data point. Alice & SEM2k agree with ST.
+Used Alice @ LE and SEM2k renorm. @ HE.
+
+### 6C ### C-13 ### ###
+run_cs 06.C/C13.2k 06.C/yield.C13 06.C/c
+
+C13 (p,X) Be10 ** 6 13 4 10 0 0 ** /
+Only 3 data points. SEM2k calcs are quite close.
+Use data & Alice threshold.
+
+C13 (p,X) Be9 ** 6 13 4 9 0 0 ** /
+Only 3 data points above 100 MeV/n. W, ST and SEM2k calcs 
+are quite close to the data. Use fit: p_cs_fits.dat
+
+C13 (p,X) Be7 ** 6 13 4 7 0 0 ** / ?
+Only 3 data points. Use data.
+
+C13 (p,X) Li7 ** 6 13 3 7 0 0 ** / ???
+No data. Use Alice @ LE and SEM2k renorm. to match Alice
+@ LE and ST @ HE. (Choosen so from comparison w. C12->Li6,7 cs.)
+
+C13 (p,X) Li6 ** 6 13 3 6 0 0 ** / ???
+No data. Use Alice @ LE and SEM2k renorm. to match Alice
+@ LE and ST @ HE. (Choosen so from comparison w. C12->Li6,7 cs.)
+
+### 6C ### C-12 ### ### 
+run_cs 06.C/C12.2k 06.C/yield.C12 06.C/c
+
+C12 (p,X) C11 ** 6 12 6 11 0 0 ** / good
+A lot of data on natC. ST is very close to data,
+combined w. B11 consistent w. A11.
+Use ST: p_cs_fits.dat (my fit is kept in eval_iso_cs.dat)
+
+C12 (p,X) C10 ** 6 12 6 10 0 0 ** / ?
+There some data on natC which exceed Webber's data by
+a factor of 3. All approx. differ essentially.
+Use natC data.
+
+\\C12 (p,X) B-tot
+Total B production is in agreement with
+We98 data: 45.3 mb +/- 10% @ 362 MeV/nucleon
+
+C12 (p,X) B11 ** 6 12 5 11 0 0 ** / LE ?
+Only 6 data points, ~30mb. Using data + approx. 
+Be11 is excluded because of Z,A.
+
+C12 (p,X) B10 ** 6 12 5 10 0 0 ** /
+Renormalized SEM2K is used. Data: Webber's and Ko99 points, ~17mb.
+Older data (containing C10) are used as well after subtracting
+C10 contribution. Looks consistent.  
+
+\\C12 (p,X) Be-tot
+Total Be production is in agreement with
+We98 data: 15.3 mb +/- 10% @ 362 MeV/nucleon
+
+C12 (p,X) Be10 ** 6 12 4 10 0 0 ** /
+A lot of data on C12 and natC. Using data.
+~2-3mb @ 362 MeV/n.
+
+C12 (p,X) Be9 ** 6 12 4 9 3 9 0 0 ** / Ok
+Used O16->A9 data @ LE and data including Li9 @ HE. 
+~4mb @ 362 MeV/n.
+
+C12 (p,X) Be7 ** 6 12 4 7 0 0 ** / Ok
+A lot of data on natC. Using mainly MIEX97 data @ LE
+and C12 data @ HE. ~10mb @ 362 MeV/n.
+
+\\C12 (p,X) Li-tot
+Total Li production is in agreement with
+We98 data: 22.6 mb +/- 20% @ 362 MeV/nucleon
+
+C12 (p,X) Li7 ** 6 12 3 7 0 0 ** /
+13 data points, ~10mb. Using just data.
+
+C12 (p,X) Li6 (+He6) ** 6 12 3 6 2 6 0 0 ** / ?
+Using data, ~10mb: several points.
+
+### 5B ### B-11 ### ###
+run_cs1 05.B/B11.2k 05.B/b
+
+B11 (p,X) B10 ** 5 11 5 10 0 0 ** / ?? m.b. ~10mb less
+This is a very difficult channel. There are only 3 points
+by Webber indicating the cs 41-46mb while he gives Be10 cs 
+~5-8 mb. ST agree with SEM2k and @ W. HE: all non-renorm. 
+Use ST (renorm.): p_cs_fits.dat
+Gives B10 cs equal to 40 mb @ HE.
+
+\\B11 (p,X) Be-tot
+Total Be production is in agreement with
+We98 data: 27.2 mb +/- 10% @ 353 MeV/nucleon
+
+B11 (p,X) Be10 ** 5 11 4 10 0 0 ** / ?? m.b. 0.75x-2x err.
+This is a very difficult channel. Two older points show
+the cross section @ 19mb, 25mb +/-33%, 
+while 3 Webber's points show 5-8 mb +/-20 %. 
+Meanwhile Webber's cs for B10 is ~45 mb.
+@ HE W & ST (non-r.) are close.
+Use W (non-renorm.) ~12mb: p_cs_fits.dat
+
+B11 (p,X) Be9 ** 5 11 4 9 0 0 ** / ??
+There are only 3 data points by Webber. One older point is 
+2 times lower then 2 more recent points. Consider only 
+two later points. SEM2k slightly renormalized is in agreement
+with these data and systematics by ST.
+Use W (renorm.) ~13mb: p_cs_fits.dat
+
+B11 (p,X) Be7 ** 5 11 4 7 0 0 ** / ??
+There are a few points which are quite scattered. If neglect
+by outstanding points @ LE, all points at 400-700
+MeV/n are in agreement. Below 100 MeV/n there are data on natB.
+Use W (renorm.) ~4mb: p_cs_fits.dat
+
+\\B11 (p,X) Li-tot
+Total Li production is in agreement with
+We98 data: 39.3 mb +/- 20% @ 353 MeV/nucleon
+
+B11 (p,X) Li9 ** 5 11 3 9 0 0 ** / ??
+There are 3 points on natB. The channel contribute 
+50% to Be9 production. W-syst. gives 0. 
+Use ST (ren.) ~1mb: p_cs_fits.dat
+
+B11 (p,X) Li7 ** 5 11 3 7 0 0 ** / ??
+Just one point (Webber) 27.7mb @ 400 MeV/n. 
+ST syst. is quite close (~20 mb), W=0. 
+Use ST (renorm.): p_cs_fits.dat
+
+B11 (p,X) Li6 (+He6) ** 5 11 3 6 2 6 0 0 ** / ??
+Just one point (Webber) 6.3mb @ 400 MeV/n. ST syst. is 3 times 
+higher, W=0. Use ST (renorm.): p_cs_fits.dat
+
+### 5B ### B-10 ### ###
+run_cs1 05.B/B10.2k 05.B/b
+
+\\B10 (p,X) Be-tot
+Total Be production is in agreement with
+We98prc data: 22.4 mb +/- 20% @ 525 MeV/nucleon
+
+B10 (p,X) Be9 ** 5 10 4 9 0 0 ** / ???
+No data. ST & W are generally agree.
+Use W, ~13mb: p_cs_fits.dat
+
+B10 (p,X) Be7 ** 5 10 4 7 0 0 ** / ??
+Quite a few data above 100 MeV/n.
+No clue to the LE behavior.
+Use W, ~6.5mb: p_cs_fits.dat
+
+B10 (p,X) Li7 ** 5 10 3 7 0 0 ** / ???
+No data. Just guess (const~10mb) between ST and SEM2k. 
+
+B10 (p,X) Li6 ** 5 10 3 6 0 0 ** / ???
+No data. Just guess (const~20mb) between ST and SEM2k. 
+
+### 4Be ### Be-9 ### ###
+
+Be9 (p,X) Be7 ** 4 9 4 7 0 0 ** / ???
+Just one data point (Webber's).
+Use W (ren.) ~10mb: p_cs_fits.dat
+
+\\Be9 (p,X) Li-tot
+Total Li production is (We98 data): 
+16.7 mb +/- 20% @ 353 MeV/nucleon.
+Ratio Li6/Li7 ~0.6 (ST).
+
+Be9 (p,X) Li7 ** 4 9 3 7 0 0 ** / ???
+No data. No SEM2k or Alice.
+Use ST (rm./tot.), ~10.7mb: p_cs_fits.dat
+
+Be9 (p,X) Li6 ** 4 9 3 6 0 0 ** / ???
+No data. No SEM2k or Alice.
+Use ST (rm./tot.), ~6.5mb: p_cs_fits.dat
+
+### 4Be ### Be-7 ### ###
+
+Be7 (p,X) Li6 ** 4 7 3 6 0 0 ** / ???
+No data. No SEM2k or Alice. 
+Use ST (non-rm.), ~20mb: p_cs_fits.dat
+
+### 3Li ### Li-7 ### ### /
+
+Li7 (p,X) Li6 ** 3 7 3 6 0 0 ** / ??
+One data point, 35.5 mb @ 400 MeV/n. 
+Use ST (ren.): p_cs_fits.dat
+
